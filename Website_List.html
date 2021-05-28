@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Web_List</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style>
+</head>
+<body class="w3-content" style="max-width:1300px">
+
+<h2><a href="Home.html" class="w3-button w3-padding-16">Home</a></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a target="_blank" href="https://register.gotowebinar.com/recording/recordingView?webinarKey=1963762263326291215&registrantEmail=kumar.dahal%40outlook.com">Agile Methodology</a></li>
+  <li><a target="_blank" href="https://register.gotowebinar.com/recording/recordingView?webinarKey=8322088473171321104&registrantEmail=kumar.dahal%40outlook.com">Introduction To Retail</a></li>
+    <li><a target="_blank" href="https://register.gotowebinar.com/recording/recordingView?webinarKey=6410290640123908620&registrantEmail=kumar.dahal%40outlook.com"> Cloud Computing</a></li>
+  <li><a target="_blank" href="https://register.gotowebinar.com/recording/recordingView?webinarKey=109465589877086990&registrantEmail=kumar.dahal%40outlook.com">What is Automation Anywhere</a></li>
+
+  <li><a target="_blank" href="https://register.gotowebinar.com/recording/1997111550921885443">Deploying Applications to Kubernetes</a></li>
+  <li><a target="_blank" href="#">Christina</a></li>
+  <li><a target="_blank" href="#">Cindy</a></li>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

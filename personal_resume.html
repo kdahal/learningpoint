@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -42,13 +42,43 @@
 #myTable tr.header, #myTable tr:hover {
   background-color: #f1f1f1;
 }
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 80px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
 </head>
 
 <body class="w3-content" style="max-width:1300px">
 
 <h2><a href="Home.html">HOME</a></h2>
-<iframe src="https://onedrive.live.com/embed?cid=59AD310E3A1E2B62&resid=59AD310E3A1E2B62%215439&authkey=AMsjR0RBS3Er4yo" width="165" height="128" frameborder="0" scrolling="no"></iframe>
+
+<div class="row">
+	<div class="column ">
+	  <h4><a href="https://stoic-colden-e3a9ee.netlify.app/" target="_blank">Product Manager</a></h4>
+	</div>
+	<div class="column">
+	  <h4><a href="https://youthful-northcutt-3e66b7.netlify.app/" target="_blank">DevOps Manager</a></h4>
+	</div>
+	<div class="column">
+	  <h4><a href="https://kresume.herokuapp.com/" target="_blank">DevOps/Product Manage</a>r</h4>
+	</div>
+	<iframe style="margin:1% 1%;" src="https://onedrive.live.com/embed?cid=59AD310E3A1E2B62&resid=59AD310E3A1E2B62%215439&authkey=AMsjR0RBS3Er4yo" width="165" height="128" frameborder="0" scrolling="no"></iframe>
+  </div>
+
 <h2>Position Name</h2>
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"/>
 
@@ -66,7 +96,7 @@
 		<a target="_blank" class="icon file" draggable="true" href="C:/Users/kumar/OneDrive/Desktop/Applications/~$mar_Product_Owner-Jamie%20Dimon.docx">~$mar_Product_Owner-Jamie Dimon.docx</a></td><td class="detailsColumn" data-value="162">162 B</td><td class="detailsColumn" data-value="1606251414">11/24/20, 1:56:54 PM</td></tr><tr><td data-value="~$mar_Product_Owner.docx">
 		<a target="_blank" class="icon file" draggable="true" href="C:/Users/kumar/OneDrive/Desktop/Applications/~$mar_Product_Owner.docx">~$mar_Product_Owner.docx</a></td><td class="detailsColumn" data-value="162">162 B</td><td class="detailsColumn" data-value="1605198419">11/12/20, 9:26:59 AM</td></tr><tr><td data-value="6965- Automation Developer (3).docx">
 		<a target="_blank"  class="icon file" draggable="true" href="C:/Users/kumar/OneDrive/Desktop/Applications/6965-%20Automation%20Developer%20(3).docx">6965- Automation Developer (3).docx</a></td><td class="detailsColumn" data-value="694091">678 kB</td><td class="detailsColumn" data-value="1604702696">11/6/20, 3:44:56 PM</td></tr><tr><td data-value="Cover_letter_swansonrink.pdf">
-		<a target="_blank"   class="icon file" draggable="true" href="C:/Users/kumar/OneDrive/Desktop/Applications/Cover_letter_swansonrink.pdf">Cover_letter_swansonrink.pdf</a></td><td class="detailsColumn" data-value="18246">17.8 kB</td><td class="detailsColumn" data-value="1607278580">12/6/20, 11:16:20 AM</td></tr><tr><td data-value="Desktop Support_Swanson Rink.pdf">
+		<a target="_blank"   class="icon file" draggable="true" href="https://onedrive.live.com/?authkey=%21AMsjR0RBS3Er4yo&cid=59AD310E3A1E2B62&id=59AD310E3A1E2B62%2114082&parId=59AD310E3A1E2B62%215439&o=OneUp">Cover_letter_swansonrink.pdf</a></td><td class="detailsColumn" data-value="18246">17.8 kB</td><td class="detailsColumn" data-value="1607278580">12/6/20, 11:16:20 AM</td></tr><tr><td data-value="Desktop Support_Swanson Rink.pdf">
 		<a target="_blank"  class="icon file" draggable="true" href="C:/Users/kumar/OneDrive/Desktop/Applications/Desktop%20Support_Swanson%20Rink.pdf">Desktop Support_Swanson Rink.pdf</a></td><td class="detailsColumn" data-value="434851">425 kB</td><td class="detailsColumn" data-value="1607146824">12/4/20, 10:40:24 PM</td></tr><tr><td data-value="In the Python file.docx">
 		<a target="_blank"    class="icon file" draggable="true" href="C:/Users/kumar/OneDrive/Desktop/Applications/In%20the%20Python%20file.docx">In the Python file.docx</a></td><td class="detailsColumn" data-value="11152">10.9 kB</td><td class="detailsColumn" data-value="1607666677">12/10/20, 11:04:37 PM</td></tr><tr><td data-value="Job_hunt-05-31-2019 (Autosaved).xlsx">
 		<a target="_blank"   class="icon file" draggable="true" href="C:/Users/kumar/OneDrive/Desktop/Applications/Job_hunt-05-31-2019%20(Autosaved).xlsx">Job_hunt-05-31-2019 (Autosaved).xlsx</a></td><td class="detailsColumn" data-value="136570">133 kB</td><td class="detailsColumn" data-value="1607285074">12/6/20, 1:04:34 PM</td></tr><tr><td data-value="Kumar_Product_Manager_Brett Bauer.docx">
